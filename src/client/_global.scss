@@ -1,0 +1,60 @@
+@import './colors';
+
+snack-bar-container{
+  &.mat-snack-bar-container {
+    display: flex;
+    justify-content: center; 
+  }
+}
+
+.snackbar-success {
+  background-color: $success;
+  color: white;
+}
+
+.snackbar-error {
+  background-color: $error;
+  color: white;
+}
+
+mat-dialog-container {
+  &.mat-dialog-container {
+    position: relative;
+  }
+}
+
+mat-spinner {
+  &.mat-progress-spinner {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.mat-badge-accent {
+  .mat-badge-content {
+    background-color: $primary;
+  }
+}
+
+mat-list-item {
+  display: flex !important;
+  justify-content: center;
+}
+
+.text-in-line {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .responsive-content_mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .responsive-content_web {
+    display: none !important;
+  }
+}
