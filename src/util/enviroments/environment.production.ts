@@ -2,10 +2,10 @@ export const commonEnvironment = {
   production: true,
   application: {
     protocol: 'https',
-    host: 'palindrome-web.herokuapp.com'
+    host: 'palindromo-web.herokuapp.com'
   },
   api: {
     source: '/api',
-    host: 'palindrome-api.herokuapp.com'
+    host: 'palindromo-api.herokuapp.com'
   }
 };

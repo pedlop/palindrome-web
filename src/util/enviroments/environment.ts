@@ -6,6 +6,6 @@ export const commonEnvironment = {
   },
   api: {
     source: '/api',
-    host: 'palindrome-api.herokuapp.com'
+    host: 'palindromo-api.herokuapp.com'
   }
 };

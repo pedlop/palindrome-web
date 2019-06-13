@@ -1,6 +1,6 @@
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -25,7 +25,7 @@ import { LoadingModule } from './shared/loading/loading.module';
 
     AppRoutingModule
   ],
-  providers: [],
+  // providers: [{ provide: LOCALE_ID, useValue: 'br' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

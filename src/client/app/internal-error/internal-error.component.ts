@@ -1,7 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 
 @Component({
-  selector: 'law-internal-error',
+  selector: 'max-internal-error',
   templateUrl: './internal-error.component.html',
   styleUrls: ['./internal-error.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush

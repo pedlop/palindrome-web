@@ -1,0 +1,46 @@
+@import '../../colors';
+
+:host {
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.wordset-item {
+  width: 25%;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+}
+
+.wordset-palindrome {
+  color: $primary;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.wordset-words {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  width: 100%;
+  &:not(:nth-child(even)) {
+    border-bottom: 1px solid #f1f1f1;
+  }
+}
+
+.nocontent-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  span {
+    margin-bottom: 1em;
+  }
+}

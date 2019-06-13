@@ -4,6 +4,7 @@ snack-bar-container{
   &.mat-snack-bar-container {
     display: flex;
     justify-content: center; 
+    max-width: unset;
   }
 }
 
@@ -17,9 +18,9 @@ snack-bar-container{
   color: white;
 }
 
-mat-dialog-container {
-  &.mat-dialog-container {
-    position: relative;
+.mat-form-field-appearance-outline {
+  .mat-form-field-subscript-wrapper  {
+    padding: 0 0px;
   }
 }
 

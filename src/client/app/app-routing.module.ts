@@ -3,7 +3,7 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 const routes: Routes = [
   { path: '', loadChildren: './home/home.module#HomeModule' },
-  { path: 'list', loadChildren: './palindromes/palindromes.module#PalindromesModule' },
+  { path: 'list', loadChildren: './words/words.module#WordsModule' },
   { path: '404', loadChildren: './not-found/not-found.module#NotFoundModule' },
   { path: '500', loadChildren: './internal-error/internal-error.module#InternalErrorModule' },
   { path: '**', redirectTo: '/404' }
