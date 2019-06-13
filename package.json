@@ -14,7 +14,7 @@
     "compile:server:local": "webpack --config webpack.server.config.local.js --progress --colors",
     "build:local": "npm run build:client-and-server-bundles && npm run compile:server:local",
     "compile:server": "webpack --config webpack.server.config.production.js --progress --colors",
-    "build:client-and-server-bundles": "ng build --prod && ng run real-estate-survey-web:server:production",
+    "build:client-and-server-bundles": "ng build --prod && ng run palindrome-web:server:production",
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server"
   },

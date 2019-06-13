@@ -9,7 +9,7 @@ module.exports = smart(require('./webpack.server.config'), {
   devtool: 'inline-source-map',
   entry: './src/server/start.ts',
   output: {
-    path: dirSync({ prefix: 'real-estate-survey-web-' }).name,
+    path: dirSync({ prefix: 'palindrome-web-' }).name,
     filename: 'server.js'
   },
   externals: {

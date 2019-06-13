@@ -31,7 +31,7 @@ Clone o projeto
 Instale as 'dependencies' e 'devDependencies' e rode a aplicação.
 
 ```sh
-$ cd real-estate-survey-web
+$ cd palindrome-web
 $ npm install
 $ npm run start:app
 ```
