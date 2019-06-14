@@ -1,6 +1,5 @@
 :host {
   display: block;
-  // padding: 2em;
   position: relative;
   top: 0;
   right: 0;
@@ -20,9 +19,7 @@ mat-card {
 
 .words-field {
   width: 100%;
-  // &:not(:last-child) {
   margin-bottom: 0.5em;
-  // }
 }
 
 .btn-submit {

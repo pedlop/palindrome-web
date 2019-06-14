@@ -1,8 +1,8 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { tap, map } from 'rxjs/operators';
+
 import { Observable } from 'rxjs';
-import { WordSetResponse } from '../core/api/api.model';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'max-words',

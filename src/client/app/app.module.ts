@@ -25,7 +25,6 @@ import { LoadingModule } from './shared/loading/loading.module';
 
     AppRoutingModule
   ],
-  // providers: [{ provide: LOCALE_ID, useValue: 'br' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

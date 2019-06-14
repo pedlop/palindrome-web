@@ -38,7 +38,6 @@ export class WordsResolverService implements Resolve<any> {
         { name: 'og:url', content: 'https://palindromo-web.herokuapp.com/' },
         { name: 'og:title', content: 'Enquete Empreendimentos' },
         { name: 'og:description', content: pageDescription },
-        // { name: 'og:image', content: 'https://palindormo-api.herokuapp.com/images/assets/logo_1by1.png' },
         { name: 'twitter:card', content: 'app' },
         { name: 'twitter:description', content: pageDescription },
         { name: 'twitter:app:country', content: 'BR' }
