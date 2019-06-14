@@ -1,4 +1,4 @@
-# Palindrom Web - PW
+# Palindrome Web - PW
 
 Aplicação Web que julga se duas palavras enviadas pelo usuário são palíndroms ou não.
 
@@ -57,7 +57,7 @@ Quando é realizado algum commit na branch master, automoticamente uma nova vers
 **Software de Graça!**
 
    [pw]: <https://github.com/pedlop/palindrome-web>
-   [ps]: <https://github.com/pedlop/palindrom-server>
+   [ps]: <https://github.com/pedlop/palindrome-server>
    [Visual Studio Code]: <https://code.visualstudio.com/>
    [node.js]: <http://nodejs.org>
    [express]: <http://expressjs.com>
