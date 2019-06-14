@@ -1,0 +1,61 @@
+@import './colors';
+
+snack-bar-container{
+  &.mat-snack-bar-container {
+    display: flex;
+    justify-content: center; 
+    max-width: unset;
+  }
+}
+
+.snackbar-success {
+  background-color: $success;
+  color: white;
+}
+
+.snackbar-error {
+  background-color: $error;
+  color: white;
+}
+
+.mat-form-field-appearance-outline {
+  .mat-form-field-subscript-wrapper  {
+    padding: 0 0px;
+  }
+}
+
+mat-spinner {
+  &.mat-progress-spinner {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.mat-badge-accent {
+  .mat-badge-content {
+    background-color: $primary;
+  }
+}
+
+mat-list-item {
+  display: flex !important;
+  justify-content: center;
+}
+
+.text-in-line {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .responsive-content_mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .responsive-content_web {
+    display: none !important;
+  }
+}

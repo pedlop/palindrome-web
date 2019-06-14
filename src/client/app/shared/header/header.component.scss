@@ -1,0 +1,64 @@
+@import '../../../colors';
+
+.header {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 4.5em;
+  background-color: $background;
+  z-index: 5;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  padding: 0 2em;
+}
+
+.header-content__logo {
+  color: white;
+  font-size: 1.5em;
+  font-family: fantasy;
+}
+
+.header-content__navigation {
+  .header-navigation__item {
+    color: white;
+    &:not(:last-child) {
+      margin-right: 2em;
+    }
+  }
+  a {
+    text-decoration: none;
+    padding: 0 1em;
+    &:hover, &:active  {
+      color: white;
+    }
+    &.active {
+      color: white;
+      padding-bottom: 0.5em;
+      border-bottom: 2px solid $accent;
+    }
+    transition: color 0.5s;
+    will-change: color;
+  }
+}
+
+.header-navigation__mobile {
+  .icon-menu {
+    font-size: 2em;
+    color: white;
+  }
+}
+
+.header-navigation__item-mobile {
+  text-align: center;
+  color: $background;
+  &.active {
+    background: rgba(0, 0, 0, 0.04);
+  }
+}

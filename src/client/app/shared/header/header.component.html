@@ -1,0 +1,31 @@
+<header class="header">
+  <div class="header-content">
+    <div class="header-content__logo">Julga Palíndromo</div>
+    <nav class="header-content__navigation responsive-content_web">
+      <a class="header-navigation__item mat-body" routerLink="/" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Início
+      </a>
+      <a class="header-navigation__item mat-body" routerLink="/list" routerLinkActive="active">
+        Palavras
+      </a>
+    </nav>
+    <div class="header-navigation__mobile responsive-content_mobile">
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon class="icon-menu" color="primary" inline>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item class="header-navigation__item-mobile mat-body" routerLink="/" routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }">
+          <mat-icon>home</mat-icon>
+          Início
+        </button>
+        <button mat-menu-item class="header-navigation__item-mobile mat-body" routerLink="/list"
+          routerLinkActive="active">
+          <mat-icon>info</mat-icon>
+          Palavras
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</header>

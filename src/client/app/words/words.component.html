@@ -1,0 +1,30 @@
+<ng-template let-wordSets [ngIf]="wordSets$ | async">
+  <ng-template [ngIf]="wordSets.length === 0" [ngIfElse]="existingContent">
+    <div class="nocontent-message">
+      <span>Ainda não existem palavras cadastradas!</span>
+      <span>Cadastre a primeira clicando abaixo</span>
+      <a type="submit" mat-raised-button color="primary" routerLink="/">Início</a>
+    </div>
+  </ng-template>
+  <ng-template #existingContent>
+    <ng-template ngFor let-wordset [ngForOf]="wordSets" [ngForTrackBy]="trackByFn">
+      <mat-card class="wordset-item">
+        <ng-template ngFor let-word let-idx="index" [ngForOf]="wordset.words">
+          <div class="wordset-words">
+            <span class="wordset-index">
+              {{ idx + 1 }}
+            </span>
+            <span class="wordset-word">
+              {{ word.word.split(' ').length === 1 ? 'Palavra' : 'Frase' }}:
+              <b>{{ word.word }}</b>
+            </span>
+            <span class="wordset-palindrome">{{ word.is_palindrome ? 'Palíndromo' : 'Não palíndromo' }}</span>
+          </div>
+        </ng-template>
+        <span class="wordset-date">
+          Criado em {{ wordset.createdAt | date:'dd/MM/y' }} às {{ wordset.createdAt | date:'mediumTime' }}
+        </span>
+      </mat-card>
+    </ng-template>
+  </ng-template>
+</ng-template>
