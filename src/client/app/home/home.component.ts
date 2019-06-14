@@ -33,8 +33,8 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.wordsForm = this.formBuilder.group({
-      first_word: ['', Validators.compose([Validators.required, Validators.minLength(2)])],
-      second_word: ['', Validators.compose([Validators.required, Validators.minLength(2)])]
+      first_word: ['', Validators.compose([Validators.required, Validators.minLength(3)])],
+      second_word: ['', Validators.compose([Validators.required, Validators.minLength(3)])]
     });
   }
 
@@ -55,16 +55,16 @@ export class HomeComponent implements OnInit, OnDestroy {
     ).subscribe(this.handleSuccessResponse, this.handleErrorResponse);
   }
 
-  getErrorMessage(attribute: 'first_word' | 'second_word') {
-    return this.wordsForm.controls[attribute].hasError('required') ? 'Você precisa digitar algum valor' :
-      this.wordsForm.controls[attribute].hasError('minLength') ? 'A palavra tem que ter no mínimo 3 letras' :
+  getErrorMessage(attribute: 'first_word' | 'second_word'): string {
+    return this.wordsForm.controls[attribute].hasError('required') ? 'Digite alguma palavra' :
+      this.wordsForm.controls[attribute].hasError('minlength') ? 'A palavra tem que ter no mínimo 3 letras' :
         '';
   }
 
   private handleSuccessResponse = (response) => {
     this.loading = false;
     this.snackbar.open(response.message, '', {
-      duration: 500000,
+      duration: 5000,
       panelClass: 'snackbar-success'
     });
   }

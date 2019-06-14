@@ -3,7 +3,7 @@
 Aplicação Web que julga se duas palavras enviadas pelo usuário são palíndroms ou não.
 
 ## API
- [**Palindrome Server**][ress]
+ [**Palindrome Server**][ps]
 
 ## Funcionalidades
 
@@ -46,12 +46,12 @@ $ npm run build
 
 ### Deploy
 
-Quando é realizado algum commit na brancha master, automoticamente uma nova versão da aplicação é colocada em produção pelo heroku.
+Quando é realizado algum commit na branch master, automoticamente uma nova versão da aplicação é colocada em produção pelo heroku.
 
 
 ### A Fazer
 
- - Write MORE Tests
+ - Write Tests
  - Progressive Web App
 
 **Software de Graça!**
