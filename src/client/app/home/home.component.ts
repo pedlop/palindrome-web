@@ -55,6 +55,12 @@ export class HomeComponent implements OnInit, OnDestroy {
     ).subscribe(this.handleSuccessResponse, this.handleErrorResponse);
   }
 
+  getErrorMessage(attribute: 'first_word' | 'second_word') {
+    return this.wordsForm.controls[attribute].hasError('required') ? 'Você precisa digitar algum valor' :
+      this.wordsForm.controls[attribute].hasError('minLength') ? 'A palavra tem que ter no mínimo 3 letras' :
+        '';
+  }
+
   private handleSuccessResponse = (response) => {
     this.loading = false;
     this.snackbar.open(response.message, '', {

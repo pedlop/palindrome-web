@@ -2,15 +2,16 @@
   <form class="words-form" [formGroup]="wordsForm" novalidate (ngSubmit)="onSubmitWordsToJudgement()">
     <mat-form-field class="words-field" appearance="outline">
       <mat-label>Primeira Palavra</mat-label>
-      <input matInput placeholder="Palavra" formControlName="first_word">
+      <input matInput placeholder="Palavra a ser julgada" formControlName="first_word">
       <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
-      <mat-hint>Escreva a palavra a ser julgada</mat-hint>
+      <!-- <mat-hint>Escreva a palavra a ser julgada</mat-hint> -->
+      <mat-error *ngIf="wordsForm.controls.first_word.invalid">{{getErrorMessage('first_word')}}</mat-error>
     </mat-form-field>
     <mat-form-field class="words-field" appearance="outline">
       <mat-label>Segunda Palavra</mat-label>
-      <input matInput placeholder="Palavra" formControlName="second_word">
+      <input matInput placeholder="Palavra a ser julgada" formControlName="second_word">
       <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
-      <mat-hint>Escreva a palavra a ser julgada</mat-hint>
+      <mat-error *ngIf="wordsForm.controls.second_word.invalid">{{getErrorMessage('second_word')}}</mat-error>
     </mat-form-field>
     <button class="btn-submit" [disabled]="wordsForm.invalid" type="submit" mat-raised-button
       color="primary">Julgar</button>
